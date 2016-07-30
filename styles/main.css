@@ -1,0 +1,88 @@
+body {
+  background: #36b9ff;
+}
+
+#list-messages li {
+  padding: 20px;
+  background:white;
+  border-radius: 20px;
+  width: 550px;
+  margin: 0 auto 150px auto;
+  position:relative;
+}
+
+#list-messages li:after {
+  content: "";
+  height: 200px;
+  width: 1px;
+  border-right: 1px solid white;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+}
+#list-messages li a {
+  float:right;
+}
+
+#list-messages li p {
+  font-size: 22px;
+}
+
+#list-messages li p::before, #list-messages li p::after {
+  content:"\"";
+  font-size:40px;
+}
+#list-messages li .controls {
+  float:right;
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+}
+#list-messages li .controls a {
+  margin: 0 5px;
+}
+
+#loading {
+
+  position: fixed;
+  top:15px;
+  width: 250px;
+  left: calc(50% - 125px);
+  display:none;
+}
+
+#message {
+  font-size:24px;
+  color: #121212;
+  min-height: 30px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+#message::-webkit-input-placeholder {
+  color: #c1c1c1;
+}
+
+#message::-moz-placeholder { /* Firefox 18- */
+  color: #c1c1c1;
+}
+
+#message::-moz-placeholder {  /* Firefox 19+ */
+  color: #c1c1c1;
+}
+
+#message:-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.form-add {
+  margin-top:50px;
+}
+
+.text-white {
+  color: white;
+}
+
+.messages {
+  margin-top: 100px;
+}
